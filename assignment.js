@@ -7,7 +7,7 @@ function feetToMile(feet){
         return mile;
     }
 }
-console.log(feetToMile(5));
+console.log(feetToMile(-50));
 function woodCalculator(chair,table,bed){
     if((chair<0)||(Math.ceil(chair)!==Math.floor(chair))){
         return 'Ammount of Chair can not be a negative or a fraction number,Please input a positive integer value';
@@ -23,7 +23,7 @@ function woodCalculator(chair,table,bed){
         return totalAmountOfWood;
     }
 }
-console.log(woodCalculator(3,5,3));
+console.log(woodCalculator(3,-5,3));
 function brickCalculator(floor){
     if((floor<0)||(Math.ceil(floor)!==Math.floor(floor))){
         return 'Ammount of Floor can not be negative or fraction';
@@ -44,7 +44,7 @@ function brickCalculator(floor){
     }  
 
 }
-console.log(brickCalculator(23));
+console.log(brickCalculator(-5));
 function tinyFriend(name){
     if(name.length==0){
         return 'You do not entry any of your friend name yet.Please input your friend name'
@@ -60,4 +60,4 @@ function tinyFriend(name){
     return smallestName;
     } 
   }
-  console.log(tinyFriend(['noman','Juba','Raimu']));
+  console.log(tinyFriend([]));
